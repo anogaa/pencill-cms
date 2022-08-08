@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_question_multiple_choices",
+  "info": {
+    "displayName": "Multiple Choice Component",
+    "icon": "list-ol",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "answerChoice": {
+      "displayName": "Answer Choice",
+      "type": "component",
+      "repeatable": true,
+      "component": "question.answer-choice"
+    }
+  }
+}

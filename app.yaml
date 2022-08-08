@@ -1,0 +1,14 @@
+runtime: nodejs16
+
+instance_class: F2
+
+env_variables:
+  HOST: '0.0.0.0'
+  NODE_ENV: 'production'
+  DATABASE_NAME: 'strapi'
+  DATABASE_USER: 'postgres'
+  DATABASE_PASSWORD: 'Succ3ss123£'
+  INSTANCE_CONNECTION_NAME: 'ag-pencill:europe-west2:pencill-cms-db'
+
+beta_settings:
+  cloud_sql_instances: 'ag-pencill:europe-west2:pencill-cms-db'

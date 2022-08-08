@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_question_questions",
+  "info": {
+    "displayName": "Question Component",
+    "icon": "question",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "supportMedia": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "duration": {
+      "type": "integer",
+      "default": 5,
+      "min": 2
+    },
+    "mark": {
+      "type": "decimal",
+      "default": 1,
+      "required": true,
+      "min": 0.5
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_question_answer_choices",
+  "info": {
+    "displayName": "Answer Choice Component",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "answerChoice": {
+      "type": "richtext"
+    },
+    "correctAnswer": {
+      "type": "boolean",
+      "default": false
+    },
+    "answerSupportMedia": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "answerChoiceID": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_question_multiple_choice_questions",
+  "info": {
+    "displayName": "Multiple Choice Question Component",
+    "icon": "check-double",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "richtext"
+    },
+    "questionSupportMedia": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mark": {
+      "type": "decimal",
+      "required": true,
+      "default": 1
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topic.topic"
+    },
+    "duration": {
+      "type": "integer",
+      "required": true,
+      "default": 5,
+      "min": 1
+    },
+    "answerChoice": {
+      "type": "component",
+      "repeatable": true,
+      "component": "question.answer-choice"
+    }
+  }
+}

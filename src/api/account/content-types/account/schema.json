@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accounts",
+  "info": {
+    "singularName": "account",
+    "pluralName": "accounts",
+    "displayName": "Account",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "accountName": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "accountType": {
+      "type": "enumeration",
+      "enum": [
+        "Parent",
+        "Tutor",
+        "Student"
+      ]
+    },
+    "accountStatus": {
+      "type": "boolean"
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

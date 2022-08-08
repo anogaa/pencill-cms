@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "static_section_banks",
+  "info": {
+    "singularName": "static-section-bank",
+    "pluralName": "static-section-banks",
+    "displayName": "Static Section Bank",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "question.multiple-choice-question"
+      ]
+    },
+    "preReading": {
+      "type": "richtext",
+      "required": true
+    },
+    "sectionSupportMedia": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topic.topic"
+    }
+  }
+}

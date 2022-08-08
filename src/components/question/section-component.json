@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_question_section_components",
+  "info": {
+    "displayName": "Section Component",
+    "icon": "layer-group",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preReading": {
+      "type": "richtext"
+    }
+  }
+}

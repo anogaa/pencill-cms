@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "question_banks",
+  "info": {
+    "singularName": "question-bank",
+    "pluralName": "question-banks",
+    "displayName": "Question Bank"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Question": {
+      "type": "dynamiczone",
+      "components": [
+        "question.question",
+        "question.multiple-choice"
+      ]
+    }
+  }
+}
