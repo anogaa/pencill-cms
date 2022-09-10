@@ -32,6 +32,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "plugin::users-permissions.user"
+    },
+    "children": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::child.child",
+      "mappedBy": "account"
     }
   }
 }

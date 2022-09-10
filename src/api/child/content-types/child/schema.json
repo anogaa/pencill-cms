@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "children",
+  "info": {
+    "singularName": "child",
+    "pluralName": "children",
+    "displayName": "Child"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nickName": {
+      "type": "string",
+      "required": true
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date",
+      "required": true
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "account": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::account.account",
+      "inversedBy": "children"
+    }
+  }
+}

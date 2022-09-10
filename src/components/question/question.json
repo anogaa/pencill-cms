@@ -32,6 +32,11 @@
       "default": 1,
       "required": true,
       "min": 0.5
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topic.topic"
     }
   }
 }

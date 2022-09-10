@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exam_boards",
+  "info": {
+    "singularName": "exam-board",
+    "pluralName": "exam-boards",
+    "displayName": "Exam Board"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "boardName": {
+      "type": "string",
+      "required": true
+    },
+    "schools": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::school.school"
+    },
+    "question_papers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::question-paper.question-paper",
+      "inversedBy": "exam_boards"
+    }
+  }
+}

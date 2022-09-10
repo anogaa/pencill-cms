@@ -4,7 +4,8 @@
   "info": {
     "singularName": "topic",
     "pluralName": "topics",
-    "displayName": "Topic"
+    "displayName": "Topic",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -36,6 +37,22 @@
         }
       },
       "type": "string"
+    },
+    "proficiencyLevel": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "year1",
+        "year2",
+        "year3",
+        "year4",
+        "year5",
+        "year6"
+      ]
     }
   }
 }

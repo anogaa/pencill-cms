@@ -37,6 +37,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::topic.topic"
+    },
+    "sectionIdentifier": {
+      "type": "string"
     }
   }
 }

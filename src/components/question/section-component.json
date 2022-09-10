@@ -1,14 +1,30 @@
 {
   "collectionName": "components_question_section_components",
   "info": {
-    "displayName": "Section Component",
-    "icon": "layer-group",
+    "displayName": "Static Section Component",
+    "icon": "question",
     "description": ""
   },
   "options": {},
   "attributes": {
     "preReading": {
       "type": "richtext"
+    },
+    "sectionSupportMedia": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topic.topic"
     }
   }
 }
