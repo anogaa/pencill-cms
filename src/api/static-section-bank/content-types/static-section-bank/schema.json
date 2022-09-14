@@ -39,7 +39,8 @@
       "target": "api::topic.topic"
     },
     "sectionIdentifier": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     }
   }
 }

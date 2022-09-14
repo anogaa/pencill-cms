@@ -24,7 +24,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::question-paper.question-paper",
-      "inversedBy": "exam_boards"
+      "mappedBy": "exam_boards"
     }
   }
 }

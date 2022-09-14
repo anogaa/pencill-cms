@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "schoolName": {
+    "shortName": {
       "type": "string"
     },
     "question_paper": {
@@ -26,13 +26,51 @@
       "repeatable": false,
       "component": "common.address"
     },
-    "admissionFor": {
+    "admissionGender": {
       "type": "enumeration",
       "enum": [
         "Girl",
         "Boy",
         "Both"
       ]
+    },
+    "contactDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.contact-component"
+    },
+    "websiteAddress": {
+      "type": "string"
+    },
+    "fullName": {
+      "type": "string"
+    },
+    "local_authority": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::local-authority.local-authority",
+      "inversedBy": "schools"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Academy Converter"
+      ]
+    },
+    "phase": {
+      "type": "enumeration",
+      "enum": [
+        "Secondary",
+        "Higher"
+      ]
+    },
+    "academySponsor": {
+      "type": "string"
+    },
+    "schoolProgress": {
+      "type": "component",
+      "repeatable": true,
+      "component": "school.school-progress-component"
     }
   }
 }

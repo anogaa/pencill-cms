@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_common_contact_components",
+  "info": {
+    "displayName": "Contact Component",
+    "icon": "headphones",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "contactName": {
+      "type": "string"
+    },
+    "contactTitle": {
+      "type": "enumeration",
+      "enum": [
+        "Mr",
+        "Ms",
+        "Miss",
+        "Mrs",
+        "Master"
+      ]
+    },
+    "email": {
+      "type": "email"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "mobileNumber": {
+      "type": "string"
+    }
+  }
+}

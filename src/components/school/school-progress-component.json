@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_school_school_progress_components",
+  "info": {
+    "displayName": "School Progress Component",
+    "icon": "sort-amount-up"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "date"
+    },
+    "rank": {
+      "type": "integer"
+    },
+    "progressScore": {
+      "type": "decimal"
+    }
+  }
+}

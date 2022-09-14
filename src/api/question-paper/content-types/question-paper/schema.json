@@ -40,6 +40,117 @@
       "relation": "manyToMany",
       "target": "api::exam-board.exam-board",
       "inversedBy": "question_papers"
+    },
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "provider": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "instructionsGeneral": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "instructionsSpecific": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "metaDifficulty": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "Easy",
+        "Moderate",
+        "Difficult"
+      ]
+    },
+    "metaLevel": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "Year1",
+        "Year2",
+        "Year3",
+        "Year4",
+        "Year5",
+        "Year6",
+        "Year7"
+      ]
+    },
+    "totalMarks": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "integer"
+    },
+    "totalDuration": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "integer",
+      "required": true
+    },
+    "totalQuestions": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "integer"
+    },
+    "passMark": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "integer"
     }
   }
 }
