@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_account_marketing_preferences",
+  "info": {
+    "displayName": "Marketing Preferences Component",
+    "icon": "copy",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "emailOptIn": {
+      "type": "boolean",
+      "default": false
+    },
+    "smsOptIn": {
+      "type": "boolean"
+    },
+    "marketingOptIn": {
+      "type": "boolean"
+    },
+    "postalOptIn": {
+      "type": "boolean"
+    }
+  }
+}

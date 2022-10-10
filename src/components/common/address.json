@@ -17,7 +17,8 @@
       "type": "string"
     },
     "postCode": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "latitude": {
       "type": "float"

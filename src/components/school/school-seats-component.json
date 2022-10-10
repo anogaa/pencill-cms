@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_school_school_seats_components",
+  "info": {
+    "displayName": "School Seats Component",
+    "icon": "chair",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "allocationSeats": {
+      "type": "integer"
+    },
+    "applicationSeats": {
+      "type": "integer"
+    },
+    "admissionSeats": {
+      "type": "integer"
+    },
+    "offerDayCutoff": {
+      "type": "integer"
+    },
+    "finalDayCutOff": {
+      "type": "integer"
+    }
+  }
+}

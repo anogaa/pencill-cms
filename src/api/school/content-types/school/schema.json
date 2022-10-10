@@ -29,9 +29,9 @@
     "admissionGender": {
       "type": "enumeration",
       "enum": [
-        "Girl",
-        "Boy",
-        "Both"
+        "Girls",
+        "Boys",
+        "Mixed"
       ]
     },
     "contactDetails": {
@@ -71,6 +71,16 @@
       "type": "component",
       "repeatable": true,
       "component": "school.school-progress-component"
+    },
+    "timeline": {
+      "type": "component",
+      "repeatable": true,
+      "component": "school.school-timeline-component"
+    },
+    "admission": {
+      "type": "component",
+      "repeatable": true,
+      "component": "school.school-admission-component"
     }
   }
 }

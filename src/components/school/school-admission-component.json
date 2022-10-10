@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_school_school_admission_components",
+  "info": {
+    "displayName": "School Admission Component",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "date"
+    },
+    "admissionTotal": {
+      "type": "component",
+      "repeatable": false,
+      "component": "school.school-seats-component"
+    },
+    "insideCatchment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "school.school-seats-component"
+    },
+    "outsideCatchment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "school.school-seats-component"
+    }
+  }
+}

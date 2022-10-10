@@ -5,7 +5,7 @@ module.exports = ({ env }) => ({
       provider: '@strapi-community/strapi-provider-upload-google-cloud-storage',
       providerOptions: {
           bucketName: 'pencill-strapi-cms',
-          publicFiles: false,
+          publicFiles: true,
           uniform: false,
           basePath: '',
       },

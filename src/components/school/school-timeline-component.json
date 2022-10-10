@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_school_school_timeline_components",
+  "info": {
+    "displayName": "School Timeline Component",
+    "icon": "clock",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "activityName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "startDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    },
+    "year": {
+      "type": "date"
+    }
+  }
+}
